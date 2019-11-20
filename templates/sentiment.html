@@ -16,15 +16,21 @@
     <div>
         <form action="{{ url_for('predict')}}" method="POST">
             <h6>Please enter your sentiments on todays politics, Movies, Actors and Actresses</h6>
-            <textarea name="comments" id="comments" name="comments" cols="90" rows="10"></textarea>
+            <textarea name="comments" id="comments" name="comments" cols="90" rows="10" required></textarea>
             <p></p>
             <button type="submit" class="btn btn-primary btn-lg">Predict</button>
         </form>
-        {%if sentiment == 1 %}
+        <!--This piece of code is not used
+            {%if sentiment == 1 %}
         <h1>Sentiment for your comment is "Sexist/Recist"</h1>
         {%elif sentiment==0 %}
         <h1>Sentiment for your comment is "Good"</h1>
         {%endif%}
+
+        -->
+        
+
+    
  
     
     

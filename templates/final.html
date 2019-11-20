@@ -7,9 +7,13 @@
     <title>Sentiment score</title>
 </head>
 <body>
-    <h1>Thank you for your comment!Sentiment of your sentiment is {{comments}}</h1>
-    <h2>{{comments}}</h2>
-    <h3>{{comment_tokens}}</h3>
+    {%if sentiment == 1 %}
+        <h1>Sentiment for your comment is "Sexist/Recist"</h1>
+        {%elif sentiment==0 %}
+        <h1>Sentiment for your comment is "Good"</h1>
+    {%endif%}
+
+    <a href="{{url_for('index')}}">click here to go back</a>
     
     
 </body>

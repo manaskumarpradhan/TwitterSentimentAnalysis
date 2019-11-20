@@ -67,7 +67,7 @@ def predict():
     comment_tfidf = vectorizer.transform(clean_comment).toarray()
     sentiment = model.predict(comment_tfidf)
     
-    return render_template('sentiment.html', comments=comments,sentiment=sentiment[0])
+    return render_template('final.html', comments=comments,sentiment=sentiment[0])
 
 if __name__ == "__main__":
 
