@@ -11,11 +11,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Welcome to Online Sentiment Review Portal!!</h1>
+    <h1>Welcome to Online Sentiment Review Portal!!!</h1>
     <br>
     <div>
         <form action="{{ url_for('predict')}}" method="POST">
-            <h6>Please enter your sentiments on todays politics, Movies, Actors and Actresses</h6>
+            <h6>Please enter UR sentiments on todays politics, Movies, Actors and Actresses</h6>
             <textarea name="comments" id="comments" name="comments" cols="90" rows="10" required></textarea>
             <p></p>
             <button type="submit" class="btn btn-primary btn-lg">Predict</button>
