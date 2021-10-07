@@ -6,7 +6,7 @@ from flask import Flask, request,render_template
 
 app = Flask(__name__)
 
-with open('glm_pickle','rb') as f:
+with open('glm_pickle', 'rb') as f:
     model = pickle.load(f)
 
 with open('vectorizer_pickle','rb') as t:
